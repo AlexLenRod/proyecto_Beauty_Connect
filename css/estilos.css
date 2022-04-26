@@ -1,0 +1,124 @@
+/* Reset inicial */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ===== Inicio maquetacion del encabezado =====*/
+#encabezado {
+	width: 100%;
+	height: 950px;
+	background-color: #401C1C;
+/*    background-image: linear-gradient(rgba(107, 71, 71, 0.5), rgba(107, 71, 71, 0.5)), url("../Media/FondoHeroImage.png"); */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoHeroImage.png");
+}
+
+
+
+/* ----- Menú ----- */
+nav {
+	width: 100%;
+	height: 150px;
+	background-color: rgba(64, 51, 72, 1);
+/* 	overflow: hidden; */
+	position: fixed;
+	top: 0;
+   font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+	z-index: 1;
+}
+
+/* ----- Formato y transición Logo ----- */
+#logo {
+	width: auto;
+	height: 100%;
+	float: left;
+	display: block;
+	margin-left: 100px;
+	padding: 10px;
+   border-radius: 50%;
+}
+
+/* ----- Contenedor selector comunidad autonoma ----- */
+#selector {
+   width: 250px;
+   height: auto;
+   display: block;
+   line-height: 150px;
+   margin-left: 50px;
+/*    background-color: aqua; */
+   float: left
+}
+
+#comunidadAutonoma {
+   font-size: 1.2rem
+}
+
+
+/* ----- Contenedor pestañas Menú ----- */
+#menuEncabezado {
+   width: auto;
+   height: 150px;
+/*    line-height: 100%; */
+	float: right;
+	margin-right: 100px;
+/*    background-color: aqua; */
+/*    overflow: hidden; */
+   z-index: 1;
+}
+
+/* ----- Lista de Menú ----- */
+#menuPrincipal {
+	list-style-type: none;
+/* 	width: auto; */
+	line-height: 150px;
+/* 	float: right; */
+}
+
+/* ----- Cada uno de los titulos del menú principal ----- */
+.titulosMenuPpal {
+	float: left;
+	margin: 0px 20px;
+/*	line-height: 150px;*/
+}
+
+/* ----- Formato de fuentes titulos menú ----- */
+.titulosMenuPpal>a {
+	font-family: 'Roboto', sans-serif;
+	/*Tamaño de letra lo hereda de "nav"*/
+	text-decoration: none;
+	color: rgba(214, 206, 206, 1);
+}
+
+/* ----- Fin Menú ----- */
+
+/* ----- Nombre Salón ----- */
+#nombreSalon {
+	width: 1440px;
+	font-family: 'Courgette', cursive;
+	font-size: 12.5rem;
+	text-shadow: 3px 5px 8px rgba(214, 206, 206, 1);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
+	top: 265px;
+}
+/* ----- Fin Nombre Salón ----- */
+
+/* ----- Eslogan Salón ----- */
+#esloganSalon {
+	width: 1440px;
+	font-family: 'Courgette', cursive;
+	text-shadow: 3px 5px 8px rgba(214, 206, 206, 1);
+	font-size: 5rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
+	top: 260px;
+}
+/* ----- Fin Eslogan Salón ----- */
+
+/* ===== Final maquetacion del encabezado ===== */

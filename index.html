@@ -2,14 +2,93 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Beauty Connect</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referencia al archio estilos.css que dara formato y estilo a la pagina web -->
+	<link rel="stylesheet" href="CSS/estilos.css">
+
+	<!-- =============== Estilos de letra =============== -->
+	<!-- ----- Roboto ----- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- ----- Fin Roboto ----- -->
+
+	<!-- ----- Courgette ----- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<!-- ----- Fin Courgette ----- -->
+	<!-- =============== Fin Estilos de letra =============== -->
+
+	<title>Beauty Connect</title>
 </head>
-<div></div>
 
 <body>
+
+	<!-- Inicio de sección Encabezado -->
+	<header id="encabezado">
+
+		<nav id="barraNavegacion">
+			<!-- Logo Beauty Connect -->
+			<a href="Index.html">
+				<img src="Media/logo_BC.png" alt="" id="logo">
+			</a>
+			<!-- Eleccion de Comunidad Autonoma -->
+			<div id="selector">
+				<select id="comunidadAutonoma" class="comunidadAutonoma" name="comunidadAutonoma" required>
+					<option selected value="">Comunidad Autónoma</option>
+					<option value="Andalucia">Andalucia</option>
+					<option value="Aragon">Aragón</option>
+					<option value="Asturias">Principado de Asturias</option>
+					<option value="Baleares">Islas Baleares</option>
+					<option value="Canarias">Canarias</option>
+					<option value="Cantabria">Cantabria</option>
+					<option value="ClaMancha">Castilla la Mancha</option>
+					<option value="CLeon">Castilla y Leon</option>
+					<option value="Catalunya">Cataluña</option>
+					<option value="Ceuta">Ceuta</option>
+					<option value="Extremadura">Extremadura</option>
+					<option value="Galicia">Galicia</option>
+					<option value="Rioja">La Rioja</option>
+					<option value="Madrid">Madrid</option>
+					<option value="Melilla">Melilla</option>
+					<option value="Murcia">Región de Murcia</option>
+					<option value="Navarra">Navarra</option>
+					<option value="Valencia">Valencia</option>
+					<option value="PaisVasco">Pais Vasco</option>
+				</select>
+			</div>
+			<!-- <li class="titulosMenuPpal"><a href="#servicios"><b>Servicios</b></a>
+				
+			</li> -->
+
+
+			<!-- Pestañas del menú principal -->
+			<div id="menuEncabezado">
+				<ul id="menuPrincipal">
+					<li class="titulosMenuPpal"><a href="#encabezado"><b>Inicio</b></a></li>
+					<li class="titulosMenuPpal"><a href="#servicios"><b>Servicios</b></a>
+						<ul id="subMenuServicios">
+							<li class="elementosSubMenu"><a href="#servicios"><b>Peluquería</b></a></li>
+							<li class="elementosSubMenu"><a href="#servicios"><b>Manicure</b></a></li>
+							<li class="elementosSubMenu"><a href="#servicios"><b>Pedicure</b></a></li>
+							<li class="elementosSubMenu"><a href="#servicios"><b>Maquillaje</b></a></li>
+						</ul>
+					<li class="titulosMenuPpal"><a href="#enTuComunidad"><b>En tu Comunidad</b></a></li>
+					<li class="titulosMenuPpal"><a href="#sobreNosotros"><b>Sobre Nosotros</b></a>
+					<li class="titulosMenuPpal"><a href="#contacto"><b>Contacto</b></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<h1 id="nombreSalon">Beauty Connect</h1>
+		<h2 id="esloganSalon">Te ayuda a verte bien y sentirte mejor</h2>
+
+	</header>
+	<!-- Fin de sección Encabezado -->
+
 
 </body>
 
