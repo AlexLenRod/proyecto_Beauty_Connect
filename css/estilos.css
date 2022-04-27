@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 
-/* ===== Inicio maquetacion del encabezado =====*/
+/* ==================== Inicio maquetacion del encabezado ==================== */
 #encabezado {
 	width: 100%;
 	height: 950px;
@@ -14,22 +14,19 @@
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoHeroImage.png");
 }
 
-
-
-/* ----- Menú ----- */
+/* -------------------- Menú -------------------- */
 nav {
 	width: 100%;
 	height: 150px;
 	background-color: rgba(64, 51, 72, 1);
-/* 	overflow: hidden; */
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
    font-family: 'Roboto', sans-serif;
 	font-size: 1.7rem;
 	z-index: 1;
 }
 
-/* ----- Formato y transición Logo ----- */
+/* ----- Formato del Logo ----- */
 #logo {
 	width: auto;
 	height: 100%;
@@ -52,9 +49,9 @@ nav {
 }
 
 #comunidadAutonoma {
-   font-size: 1.2rem
+   font-size: 1.3rem;
+   background-color: rgb(230, 204, 239);
 }
-
 
 /* ----- Contenedor pestañas Menú ----- */
 #menuEncabezado {
@@ -88,24 +85,23 @@ nav {
 	font-family: 'Roboto', sans-serif;
 	/*Tamaño de letra lo hereda de "nav"*/
 	text-decoration: none;
-	color: rgba(214, 206, 206, 1);
+	color: rgba(230, 204, 239, 1);
 }
 
-/* ----- Fin Menú ----- */
+/* -------------------- Fin Menú -------------------- */
 
 /* ----- Nombre Salón ----- */
 #nombreSalon {
 	width: 1440px;
 	font-family: 'Courgette', cursive;
 	font-size: 12.5rem;
-	text-shadow: 3px 5px 8px rgba(214, 206, 206, 1);
+	text-shadow: 3px 5px 8px rgba(230, 204, 239, 1);
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	position: relative;
 	top: 265px;
 }
-/* ----- Fin Nombre Salón ----- */
 
 /* ----- Eslogan Salón ----- */
 #esloganSalon {
@@ -119,6 +115,120 @@ nav {
 	position: relative;
 	top: 260px;
 }
-/* ----- Fin Eslogan Salón ----- */
 
-/* ===== Final maquetacion del encabezado ===== */
+
+/* ==================== Final maquetacion del encabezado ==================== */
+
+
+
+
+
+
+
+
+
+
+/* ==================== Inicio maquetacion sección Servicios ==================== */
+/* ----- Caja contenedora de la seccion Servicios ----- */
+#contenedorServicios {
+   width: 100%;
+   height: 970px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoServicios.png");
+}
+
+/* ----- Titulo seccióon Servicios ----- */
+.tituloSeccionBlanco {
+   font-family: 'Courgette', cursive;
+	font-size: 3.5rem;
+   color: rgba(230, 204, 239, 1);
+   text-shadow: 3px 5px 8px rgb(0, 0, 0, 1);
+   padding-top: 15px;
+   margin-left: 100px;
+}
+
+/* ----- Caja contenedora de la imagenes del scroll lateral ----- */
+#contenedorImgsScrollHorizontal {
+   width: auto;
+   height: 372px;
+   overflow-y: hidden;
+   overflow-x: auto;
+   white-space: nowrap;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+/* ----- Caja contenedora de la imagenes del scroll lateral ----- */
+.imgsScrollHorizontal {
+   width: 463;
+   height: 362px;
+   margin: 0, 10px, 0, 0;
+   padding: 5px;
+   display: inline-block;   
+}
+
+/* ----- Texto arriba de cada imagen del scroll lateral ----- */
+.infoImgsScroll {
+   font-family: 'Courgette', cursive;
+	font-size: 2rem;
+   color: rgba(230, 204, 239, 1);
+}
+
+/* ----- Imagenes del scroll lateral ----- */
+.imagenScroll {
+   width: 463px;
+   height: 362px;
+}
+
+
+
+
+
+
+
+/* ---- Contenedor de información comunidad actual ----- */
+#enTuComunidad {
+   width: 1720px;
+   height: 362px;
+/*    background-color: aqua; */
+   margin-left: 100px;
+   margin-right: 100px;
+   overflow: hidden;
+}
+
+/* ----- Imagen de la comunidad actual ----- */
+#imgComunidadActual {
+   width: 463px;
+   height: 362px;
+   background-color:aliceblue;
+   float: left;
+/*    display :block; */
+}
+
+#imgComunidadActual>img {
+   width: 463px;
+   height: 362px;
+/*    background-color:aliceblue; */
+   float: left;
+   border-style: solid;
+   border-color: rgba(230, 204, 239, 1);
+   border-width: 5px;
+/*    display :block; */
+}
+
+/* ----- Contenedor texto de la comunidad actual ----- */
+#contenTextoComActual {
+   width: 1106px;
+   height: 362px;
+/*    background-color:aliceblue; */
+   float: left;
+   margin-left: 100px;
+   /* z-index: 3; */
+}
+
+/* ----- Texto descriptivo de la comunidad actual ----- */
+.textoComActual {
+   font-family: 'Courgette', cursive;
+	font-size: 1.7rem;
+   color: rgba(230, 204, 239, 1);
+}
+/* ====================  Final maquetacion sección Servicios ==================== */
