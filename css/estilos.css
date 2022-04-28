@@ -92,28 +92,29 @@ nav {
 
 /* ----- Nombre Salón ----- */
 #nombreSalon {
-	width: 1440px;
+	width: 1000px;
 	font-family: 'Courgette', cursive;
-	font-size: 12.5rem;
+	font-size: 8.3rem;
 	text-shadow: 3px 5px 8px rgba(230, 204, 239, 1);
-	margin-left: auto;
+	margin-left: 630px;
 	margin-right: auto;
 	text-align: center;
 	position: relative;
-	top: 265px;
+	top: 165px;
+/*    background-color:aqua; */
 }
 
 /* ----- Eslogan Salón ----- */
 #esloganSalon {
-	width: 1440px;
+	width: 700px;
 	font-family: 'Courgette', cursive;
 	text-shadow: 3px 5px 8px rgba(214, 206, 206, 1);
-	font-size: 5rem;
-	margin-left: auto;
+	font-size: 4rem;
+	margin-left: 780px;
 	margin-right: auto;
 	text-align: center;
 	position: relative;
-	top: 260px;
+	top: 200px;
 }
 
 
@@ -130,10 +131,10 @@ nav {
 
 /* ==================== Inicio maquetacion sección Servicios ==================== */
 /* ----- Caja contenedora de la seccion Servicios ----- */
-#contenedorServicios {
+#servicios {
    width: 100%;
    height: 950px;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoServicios.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoServicios.png");
 }
 
 /* ----- Titulo seccióon Servicios ----- */
@@ -146,10 +147,10 @@ nav {
    margin-left: 100px;
 }
 
-/* ----- Caja contenedora de la imagenes del scroll lateral ----- */
+/* ----- Contenedor del scroll lateral de servicios----- */
 #contenedorImgsScrollHorizontal {
    width: auto;
-   height: 322px;
+   height: 317px;
    overflow-y: hidden;
    overflow-x: auto;
    white-space: nowrap;
@@ -157,7 +158,7 @@ nav {
    margin-right: 100px;
 }
 
-/* ----- Caja contenedora de la imagenes del scroll lateral ----- */
+/* ----- Caja contenedora de la imagenes del scroll lateral de servicios----- */
 .imgsScrollHorizontal {
    width: 460;
    height: 305px;
@@ -167,7 +168,7 @@ nav {
 /*    background-color: bisque;   */
 }
 
-/* ----- Texto arriba de cada imagen del scroll lateral ----- */
+/* ----- Texto encima de cada imagen del scroll lateral de servicios ----- */
 .infoImgsScroll {
    font-family: 'Roboto', sans-serif;
 	font-size: 1.7rem;
@@ -184,22 +185,30 @@ nav {
 }
 
 /* ---- Contenedor de información comunidad actual ----- */
-.enTuComunidad {
-   width: 1761px;
-   height: 363px;
+#enTuComunidad {
+/*    width: 1761px; */
+   width: auto;
+   height: 387px;
 /*    background-color: aqua; */
-   margin-left: 80px;
+   overflow-y: hidden;
+   overflow-x: auto;
+   white-space: nowrap;
+   margin-left: 95px;
+   margin-right: 100px;
+/*    margin-left: 80px;
    margin-right: 80px;
-   overflow: hidden;
+   overflow: hidden; */
 }
 
 /* ----- Contenedor texto e imagen centro ----- */
 .contenedorCentro {
    width: auto;
    height: 100%;
-   float: left;
+/*    float: left; */
    padding-left: 10px;
    padding-right: 12px;
+   padding: 5px;
+   display: inline-block;
 }
 
 /* ----- Contenedor Nombre del centro ----- */
@@ -216,18 +225,12 @@ nav {
 .imagenCentro {
    width: 557px;
    height: 313px;
-   background-color:aliceblue;
-}
-
-.contenedorCentro >img {
-   width: 557px;
-   height: 313px;
-/*    background-color:aliceblue; */
-   float: left;
+ /*   background-color:aliceblue; */
    border-style: solid;
    border-radius: 20px;
    border-color: rgba(230, 204, 239, 1);
    border-width: 5px;
+
 }
 
 /* ====================  Final maquetacion sección Servicios ==================== */
@@ -241,44 +244,36 @@ nav {
 
 /* ================== Inicio maquetacion sección Sobre Nosotros ================= */
 /* ----- Contenedor de la seccion Sobre Nosotros ----- */
-#contenedorSobreNosotros {
+#sobreNosotros {
    width: 100%;
    height: 950px;
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../Media/FondoSobreNosotros.png");
 }
 
+#sobreNosotros>h3 {
+   padding-top: 50px;
+   margin-left: 300px;
+}
 /* ----- Caja contenedora de imagen e informacion Sobre Nosotros ----- */
-#sobreNosotros {
+#contenedorSobreNosotros {
    width: 1720px;
    height: 600px;
    margin-left: 100px;
    margin-right: 100px;
-   padding-top: 40px;
+/*    padding-top: 40px; */
 /*    background-color:aliceblue; */
 /*    border-style: solid;
    border-color: rgba(230, 204, 239, 1);
    overflow: hidden; */
 }
 
-/* ----- Imagen de presentación Sobre nosotros ----- */
-#imgSobreNosotros>img {
-
-   width: 750px;
-   height: 422px;
-   float: left;
-/*    background-color:aliceblue; */
-   border-style: solid;
-   border-radius: 20px;
-   border-color: rgba(230, 204, 239, 1);
-}
-
 /* ----- Caja contenedora texto Sobre nosotros ----- */
 #cajaTextoSobreNosotros {
-   width: 864px;
+   width: 700px;
    height: 422px;
 /*    background-color:aliceblue; */
    float: left;
-   margin-left: 100px;
+   margin-left: 200px;
    padding-top: 40px;
 /*    border-style: solid;
    border-color: rgba(230, 204, 239, 1); */
@@ -291,9 +286,103 @@ nav {
    color: rgba(230, 204, 239, 1);
 }
 
+/* ----- Imagen de presentación Sobre nosotros ----- */
+#imgSobreNosotros>img {
+
+   width: 750px;
+   height: 422px;
+   margin-left: 50px;
+/*    margin-right: 100px; */
+   float: left;
+/*    background-color:aliceblue; */
+   border-style: solid;
+   border-radius: 20px;
+   border-color: rgba(230, 204, 239, 1);
+}
+/* =================== Final maquetacion sección Sobre Nosotros ================= */
 
 
 
 
 
-/* ================== Inicio maquetacion sección Sobre Nosotros ================= */
+
+
+
+
+/* ==================== Inicio maquetacion sección Contacto ===================== */
+/* ----- Contenedor sección contacto ----- */
+#contacto {
+   width: 100%;
+   height: 830px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../Media/FondoContacto2.png");
+   padding-top:  50px;
+}
+
+/* ----- Caja contenedora de mapa y formulario de contacto ----- */
+#contenedorContacto {
+   width: 1720px;
+   height: 500px;
+   margin-top: 50px;
+   margin-left: 100px;
+/*    border-style: solid;
+   border-color: rgba(230, 204, 239, 1); */
+   overflow: hidden;
+}
+
+#mapa {
+   width: 600px;
+   height: 100%;
+   float: left;
+   border-style: solid;
+   border-radius: 20px;
+   border-color: rgba(230, 204, 239, 1);
+}
+
+#formulario {
+   width: 1010px;
+   height: 100%;
+   float: left;
+   padding-top: 50px;
+   margin-left: 100px;
+/*    border-style: solid;
+   border-radius: 20px;
+   border-color: rgba(230, 204, 239, 1); */
+}
+
+#formulario>label {
+   font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+   color: rgba(230, 204, 239, 1);
+   vertical-align: top;
+}
+
+#formulario>input {
+   width: 740px;
+   line-height: 35px;
+   background-color: rgba(230, 204, 239, 1);
+   font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+   color: rgba(64, 51, 72, 0.6);
+}
+
+#consulta {
+   width: 740px;
+   /*    height: 140px; */
+   line-height: 35px;
+   background-color: rgba(230, 204, 239, 1);
+   font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+   color: rgba(64, 51, 72, 0.6);
+}
+
+#botonConsulta {
+   width: 250px;
+   line-height: 50px;
+   background-color: rgba(230, 204, 239, 1);
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+   color: rgba(64, 51, 72, 1);
+   margin-left: 160px;
+}
+/* ==================== Inicio maquetacion sección Contacto ===================== */

@@ -76,7 +76,7 @@
 							<li class="elementosSubMenu"><a href="#servicios"><b>Pedicure</b></a></li>
 							<li class="elementosSubMenu"><a href="#servicios"><b>Barbería</b></a></li>
 						</ul> -->
-					<li class="titulosMenuPpal"><a href="#enTuComunidad"><b>En tu Comunidad</b></a></li>
+					<li class="titulosMenuPpal"><a href="#servicios"><b>En tu Comunidad</b></a></li>
 					<li class="titulosMenuPpal"><a href="#sobreNosotros"><b>Sobre Nosotros</b></a>
 					<li class="titulosMenuPpal"><a href="#contacto"><b>Contacto</b></a></li>
 				</ul>
@@ -84,7 +84,7 @@
 		</nav>
 
 		<h1 id="nombreSalon">Beauty Connect</h1>
-		<h2 id="esloganSalon">Te ayuda a verte bien y sentirte mejor</h2>
+		<h2 id="esloganSalon">Te ayuda a verte bien,<br> y sentirte mejor</h2>
 
 	</header>
 	<!-- ==============================  Fin de sección Encabezado  ============================== -->
@@ -98,7 +98,7 @@
 
 
 	<!-- ============================== Inicio de sección Servicios ============================== -->
-	<div id="contenedorServicios">
+	<section id="servicios">
 		<h3 class="tituloSeccionBlanco">Selecciona tu servicio</h3>
 		<div id="contenedorImgsScrollHorizontal">
 
@@ -135,7 +135,12 @@
 		</div>
 		<br>
 		<h3 class="tituloSeccionBlanco">En tu comunidad</h3>
-		<div class="enTuComunidad">
+		<div id="enTuComunidad">
+
+			<div class="contenedorCentro">
+				<div class="contNombreCentro">Nombre Centro</div>
+				<img src="media/mariaPadilla.png" alt="" class="imagenCentro">
+			</div>
 
 			<div class="contenedorCentro">
 				<div class="contNombreCentro">Nombre Centro</div>
@@ -153,7 +158,7 @@
 			</div>
 
 		</div>
-	</div>
+	</section>
 	<!-- ==============================   Fin de sección Servicios  ============================== -->
 
 
@@ -166,12 +171,10 @@
 
 	<!-- =========================== Inicio de sección Sobre Nosotros ============================ -->
 	<!-- Contenedor Seccion sobre Nosotros -->
-	<div id="contenedorSobreNosotros">
+	<section id="sobreNosotros">
 		<h3 class="tituloSeccionBlanco">Sobre nosotros</h3>
-		<div id="sobreNosotros">
-			<div id="imgSobreNosotros">
-				<img src="media/ImagenSobreNosotros.png" alt="">
-			</div>
+		<div id="contenedorSobreNosotros">
+
 			<div id="cajaTextoSobreNosotros">
 				<p class="textoInfoSobreNosotros">Nombre del centro : </p><br><br>
 				<p class="textoInfoSobreNosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
@@ -182,11 +185,59 @@
 				<p class="textoInfoSobreNosotros">Dirección : </p>
 				<p class="textoInfoSobreNosotros">Correo : </p>
 			</div>
+
+			<div id="imgSobreNosotros">
+				<img src="media/ImagenSobreNosotros.png" alt="">
+			</div>
+
 		</div>
-	</div>
+	</section>
 
 
 	<!-- ============================  Fin de sección Sobre Nosotros  ============================ -->
+
+
+
+
+
+
+
+
+
+
+	<!-- ============================== Inicio de sección Contacto =============================== -->
+	<!-- Inicio de sección Contacto -->
+	<section id="contacto">
+		<h3 class="tituloSeccionBlanco">Contacto</h3>
+		<div id="contenedorContacto">
+			<!-- Link hacia mapa de googleMaps -->
+			<iframe id="mapa"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.2542566596508!2d-3.6906479058621087!3d40.39672585751849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422639ec9a7f9f%3A0x9cd1cc078133503!2sCentral%20Divisi%C3%B3n%20Ofim%C3%A1tica%20S.L.!5e0!3m2!1ses!2ses!4v1649931866140!5m2!1ses!2ses"
+				width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			<!-- Inicio de formulario de reservas -->
+			<form action="" id="formulario">
+
+				<!-- Cuadros de entrada de datos a formulario -->
+				<label for="nombre">Nombre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+				<input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required><br><br>
+				<label for="correo">Correo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+				<input id="correo" type="email" name="correo" placeholder="Correo electronico" required><br><br>
+				<label for="clave">Contraseña :</label>
+				<input id="clave" type="password" name="clave" placeholder="Contraseña" required><br><br>
+				<label for="nombre">Consulta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+				<textarea name="consulta" id="consulta" cols="58" rows="4" placeholder="Escribanos su consulta"></textarea>
+				<!-- <input id="consulta" type="text" name="consulta" placeholder="Escribanos su cunsulta" required> --><br><br><br>
+				<button id="botonConsulta"><b>Enviar consulta</b></button>
+				<!-- 				<input type="button" value="Solicitar cita" id="botonSolicitar" onclick=""> -->
+			</form>
+			<!-- Fin de formulario -->
+		</div>
+
+	</section>
+	<!-- =============================== Final de sección Contacto =============================== -->
+
 </body>
 
 </html>
