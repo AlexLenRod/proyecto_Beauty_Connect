@@ -61,7 +61,7 @@ nav {
 	float: right;
 	margin-right: 100px;
 /*    background-color: aqua; */
-/*    overflow: hidden; */
+   overflow: hidden;
    z-index: 1;
 }
 
@@ -71,6 +71,7 @@ nav {
 /* 	width: auto; */
 	line-height: 150px;
 /* 	float: right; */
+   float: left;
 }
 
 /* ----- Cada uno de los titulos del menú principal ----- */
@@ -86,6 +87,14 @@ nav {
 	/*Tamaño de letra lo hereda de "nav"*/
 	text-decoration: none;
 	color: rgba(230, 204, 239, 1);
+}
+
+#menuEncabezado> a {
+   line-height: 150px;
+	font-size: 2rem;
+	color: rgba(230, 204, 239, 1);
+   float: left;
+   padding-left: 20px;
 }
 
 /* -------------------- Fin Menú -------------------- */
@@ -418,8 +427,6 @@ nav {
    margin-left: 80px;
    padding-left: 20px;
 	padding-right: 20px;
-	transition-property: color;
-	transition-duration: 0.8s;
 }
 
 #derechos {
@@ -436,8 +443,6 @@ nav {
 	font-size: 1.5rem;
 	color: white;
    float: right;
-/* 	transition-property: color;
-	transition-duration: 0.8s; */
 }
 
 #derechos> i {
@@ -447,13 +452,6 @@ nav {
    float: right;
    text-align: right;
 	padding-right: 50px;
-/* 	transition-property: color;
-	transition-duration: 0.8s; */
-}
-
-/* ----- Hover de iconos pie de pagina ----- */
-#redes i:hover {
-	color: rgb(218, 137, 245);
 }
 
 /* ===== Final maquetacion del pie de pagina ===== */
