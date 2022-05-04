@@ -9,8 +9,7 @@
 #encabezado {
 	width: 100%;
 	height: 950px;
-	background-color: #401C1C;
-/*    background-image: linear-gradient(rgba(107, 71, 71, 0.5), rgba(107, 71, 71, 0.5)), url("../Media/FondoHeroImage.png"); */
+/* 	background-color: #401C1C; */
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoHeroImage.png");
 }
 
@@ -44,14 +43,23 @@ nav {
    display: block;
    line-height: 150px;
    margin-left: 50px;
-/*    background-color: aqua; */
    float: left
 }
 
 #comunidadAutonoma {
    font-size: 1.3rem;
    background-color: rgb(230, 204, 239);
+   color: rgb(64, 51, 72);
+   transition-property: background-color, color;
+   transition-duration: 0.6s;
 }
+
+#comunidadAutonoma:hover {
+/*    background-color: rgb(64, 51, 72); */
+/*    color: rgb(230, 204, 239); */
+   color: rgb(162, 15, 211);
+}
+
 
 /* ----- Contenedor pestañas Menú ----- */
 #menuEncabezado {
@@ -60,7 +68,6 @@ nav {
 /*    line-height: 100%; */
 	float: right;
 	margin-right: 100px;
-/*    background-color: aqua; */
    overflow: hidden;
    z-index: 1;
 }
@@ -70,7 +77,6 @@ nav {
 	list-style-type: none;
 /* 	width: auto; */
 	line-height: 150px;
-/* 	float: right; */
    float: left;
 }
 
@@ -87,6 +93,12 @@ nav {
 	/*Tamaño de letra lo hereda de "nav"*/
 	text-decoration: none;
 	color: rgba(230, 204, 239, 1);
+   transition-property: color;
+	transition-duration: 0.6s;
+}
+
+.titulosMenuPpal> a:hover {
+   color: rgb(198, 84, 236);
 }
 
 #menuEncabezado> a {
@@ -95,6 +107,12 @@ nav {
 	color: rgba(230, 204, 239, 1);
    float: left;
    padding-left: 20px;
+   transition-property: color;
+	transition-duration: 0.6s;
+}
+
+#menuEncabezado> a:hover {
+   color: rgb(198, 84, 236);
 }
 
 /* -------------------- Fin Menú -------------------- */
@@ -110,7 +128,6 @@ nav {
 	text-align: center;
 	position: relative;
 	top: 165px;
-/*    background-color:aqua; */
 }
 
 /* ----- Eslogan Salón ----- */
@@ -173,8 +190,8 @@ nav {
    height: 305px;
    margin: 0, 10px, 0, 0;
    padding: 5px;
-   display: inline-block; 
-/*    background-color: bisque;   */
+   display: inline-block;
+    
 }
 
 /* ----- Texto encima de cada imagen del scroll lateral de servicios ----- */
@@ -184,36 +201,45 @@ nav {
    color: rgba(230, 204, 239, 1);
 }
 
-/* ----- Imagenes del scroll lateral ----- */
-.imagenScroll {
+/* ----- Caja de imagenes del scroll lateral ----- */
+.cajaImgScroll {
    width: 460px;
    height: 260px;
    border-style: solid;
    border-radius: 20px;
    border-color: rgba(230, 204, 239, 1);
+   overflow: hidden;
+}
+
+/* ----- Imagenes del scroll lateral ----- */
+.imagenScroll {
+   width: 460px;
+   height: 260px;
+
+   transition-property: transform;
+	transition-duration: 1.5s;
+}
+
+/* ----- Hover de imagenes scroll lateral de servicios ----- */
+.imagenScroll:hover {
+transform: scale(1.3,1.3);
 }
 
 /* ---- Contenedor de información comunidad actual ----- */
 #enTuComunidad {
-/*    width: 1761px; */
    width: auto;
    height: 387px;
-/*    background-color: aqua; */
    overflow-y: hidden;
    overflow-x: auto;
    white-space: nowrap;
    margin-left: 95px;
    margin-right: 100px;
-/*    margin-left: 80px;
-   margin-right: 80px;
-   overflow: hidden; */
 }
 
 /* ----- Contenedor texto e imagen centro ----- */
 .contenedorCentro {
    width: auto;
    height: 100%;
-/*    float: left; */
    padding-left: 10px;
    padding-right: 12px;
    padding: 5px;
@@ -230,16 +256,26 @@ nav {
    color: rgba(230, 204, 239, 1);
 }
 
+/* ----- Caja de imagenes de centros en la comunidad actual ----- */
+.cajaImgCentro {
+   width: 557px;
+   height: 313px;
+   border-style: solid;
+   border-radius: 20px;
+   border-color: rgba(230, 204, 239, 1);
+   overflow: hidden;
+}
 /* ----- Imagen de la comunidad actual ----- */
 .imagenCentro {
    width: 557px;
    height: 313px;
- /*   background-color:aliceblue; */
-   border-style: solid;
-   border-radius: 20px;
-   border-color: rgba(230, 204, 239, 1);
-   border-width: 5px;
+   transition-property: transform;
+	transition-duration: 1.5s;
+}
 
+/* ----- Hover de imagenes scroll lateral de centros ----- */
+.imagenCentro:hover {
+transform: scale(1.3,1.3);
 }
 
 /* ====================  Final maquetacion sección Servicios ==================== */
@@ -270,7 +306,6 @@ nav {
    margin-left: 100px;
    margin-right: 100px;
 /*    padding-top: 40px; */
-/*    background-color:aliceblue; */
 /*    border-style: solid;
    border-color: rgba(230, 204, 239, 1);
    overflow: hidden; */
@@ -280,7 +315,6 @@ nav {
 #cajaTextoSobreNosotros {
    width: 700px;
    height: 422px;
-/*    background-color:aliceblue; */
    float: left;
    margin-left: 200px;
    padding-top: 40px;
@@ -297,17 +331,17 @@ nav {
 
 /* ----- Imagen de presentación Sobre nosotros ----- */
 #imgSobreNosotros>img {
-
    width: 750px;
    height: 422px;
    margin-left: 50px;
-/*    margin-right: 100px; */
    float: left;
-/*    background-color:aliceblue; */
    border-style: solid;
    border-radius: 20px;
    border-color: rgba(230, 204, 239, 1);
+
 }
+
+
 /* =================== Final maquetacion sección Sobre Nosotros ================= */
 
 
@@ -333,8 +367,6 @@ nav {
    height: 500px;
    margin-top: 50px;
    margin-left: 100px;
-/*    border-style: solid;
-   border-color: rgba(230, 204, 239, 1); */
    overflow: hidden;
 }
 
@@ -376,7 +408,6 @@ nav {
 
 #consulta {
    width: 740px;
-   /*    height: 140px; */
    line-height: 35px;
    background-color: rgba(230, 204, 239, 1);
    font-family: 'Roboto', sans-serif;
@@ -393,6 +424,13 @@ nav {
 	font-size: 1.7rem;
    color: rgba(64, 51, 72, 1);
    margin-left: 160px;
+	transition-property: background-color, color;
+	transition-duration: 0.6s;
+}
+
+#botonConsulta:hover {
+   background-color: rgba(64, 51, 72, 1);
+   color: rgba(230, 204, 239, 1);
 }
 /* ===================== Final maquetacion sección Contacto ===================== */
 
@@ -410,7 +448,6 @@ nav {
 	height: 120px;
 	background-color: rgba(64, 51, 72, 1);
 	overflow: hidden;
-	/* text-align: center; */
 }
 /* ----- Formato de iconos pie de pagina ----- */
 #redes {
@@ -427,6 +464,8 @@ nav {
    margin-left: 80px;
    padding-left: 20px;
 	padding-right: 20px;
+	transition-property: color;
+	transition-duration: 0.6s;
 }
 
 #derechos {
@@ -452,6 +491,11 @@ nav {
    float: right;
    text-align: right;
 	padding-right: 50px;
+}
+
+/* ----- Hover de iconos pie de pagina ----- */
+#redes i:hover {
+	color: rgb(198, 84, 236);
 }
 
 /* ===== Final maquetacion del pie de pagina ===== */

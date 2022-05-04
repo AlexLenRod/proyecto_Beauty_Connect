@@ -5,10 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Referencia al archio estilos.css que dara formato y estilo a la pagina web -->
-	<link rel="stylesheet" href="CSS/estilos.css">
 
-	<!-- =============== Estilos de letra =============== -->
+	<!-- ========= Referencia al archio estilos.css que dara formato y estilo a la pagina web ========= -->
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<!-- ============================================================================================== -->
+
+
+	<!-- ===================================== Estilos de letra ======================================= -->
 	<!-- ----- Roboto ----- -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +23,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 	<!-- ----- Fin Courgette ----- -->
-	<!-- =============== Fin Estilos de letra =============== -->
+	<!-- =================================== Fin Estilos de letra ==================================== -->
 
-	<!-- ========== Acceso a iconos de FontAwesome ========== -->
+
+	<!-- ============================== Acceso a iconos de FontAwesome =============================== -->
 	<script src="https://kit.fontawesome.com/429a9d0581.js" crossorigin="anonymous"></script>
-	<!-- ======== Fin Acceso a iconos de FontAwesome ======== -->
+	<!-- ============================ Fin Acceso a iconos de FontAwesome ============================= -->
+
+
+	<!-- ======================== Referencia a Librerias AOS para animaciones ======================== -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- ============================================================================================= -->
 	<title>Beauty Connect</title>
 </head>
 
 <body>
 
-	<!-- ============================== Inicio de sección Encabezado ============================== -->
+	<!-- ================================ Inicio de sección Encabezado =============================== -->
 	<header id="encabezado">
 
 		<nav id="barraNavegacion">
@@ -87,11 +97,11 @@
 			</div>
 		</nav>
 
-		<h1 id="nombreSalon">Beauty Connect</h1>
-		<h2 id="esloganSalon">Te ayuda a verte bien,<br> y sentirte mejor</h2>
+		<h1 id="nombreSalon" data-aos="zoom-in" data-aos-duration="2000">Beauty Connect</h1>
+		<h2 id="esloganSalon" data-aos="zoom-in" data-aos-duration="2000">Te ayuda a verte bien,<br> y sentirte mejor</h2>
 
 	</header>
-	<!-- ==============================  Fin de sección Encabezado  ============================== -->
+	<!-- ================================  Fin de sección Encabezado  ================================ -->
 
 
 
@@ -101,69 +111,69 @@
 
 
 
-	<!-- ============================== Inicio de sección Servicios ============================== -->
+	<!-- ================================ Inicio de sección Servicios ================================ -->
 	<section id="servicios">
-		<h3 class="tituloSeccionBlanco">Selecciona tu servicio</h3>
+		<h3 class="tituloSeccionBlanco" data-aos="fade-right" data-aos-duration="2000">Selecciona tu servicio</h3>
 		<div id="contenedorImgsScrollHorizontal">
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Maquillaje</div>
-				<img src="media/Imagen_1_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_1_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Manicuras y Pedicuras</div>
-				<img src="media/Imagen_2_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_2_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Masajes</div>
-				<img src="media/Imagen_3_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_3_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Tratamientos faciales</div>
-				<img src="media/Imagen_4_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_4_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Depilación cera</div>
-				<img src="media/Imagen_5_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_5_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 			<div class="imgsScrollHorizontal">
 				<div class="infoImgsScroll">Depilación laser</div>
-				<img src="media/Imagen_6_HF_Servicios.png" alt="" class="imagenScroll">
+				<div class="cajaImgScroll"><img src="media/Imagen_6_HF_Servicios.png" alt="" class="imagenScroll"></div>
 			</div>
 
 		</div>
 		<br>
-		<h3 class="tituloSeccionBlanco">En tu comunidad</h3>
+		<h3 class="tituloSeccionBlanco" data-aos="fade-right" data-aos-duration="2000">En tu comunidad</h3>
 		<div id="enTuComunidad">
 
 			<div class="contenedorCentro">
 				<div class="contNombreCentro">Nombre Centro</div>
-				<img src="media/mariaPadilla.png" alt="" class="imagenCentro">
+				<div class="cajaImgCentro"><img src="media/mariaPadilla.png" alt="" class="imagenCentro"></div>
 			</div>
 
 			<div class="contenedorCentro">
 				<div class="contNombreCentro">Nombre Centro</div>
-				<img src="media/mariaPadilla.png" alt="" class="imagenCentro">
+				<div class="cajaImgCentro"><img src="media/mariaPadilla.png" alt="" class="imagenCentro"></div>
 			</div>
 
 			<div class="contenedorCentro">
 				<div class="contNombreCentro">Nombre Centro</div>
-				<img src="media/mariaPadilla.png" alt="" class="imagenCentro">
+				<div class="cajaImgCentro"><img src="media/mariaPadilla.png" alt="" class="imagenCentro"></div>
 			</div>
 
 			<div class="contenedorCentro">
 				<div class="contNombreCentro">Nombre Centro</div>
-				<img src="media/mariaPadilla.png" alt="" class="imagenCentro">
+				<div class="cajaImgCentro"><img src="media/mariaPadilla.png" alt="" class="imagenCentro"></div>
 			</div>
 
 		</div>
 	</section>
-	<!-- ==============================   Fin de sección Servicios  ============================== -->
+	<!-- ================================   Fin de sección Servicios  ================================ -->
 
 
 
@@ -173,10 +183,10 @@
 
 
 
-	<!-- =========================== Inicio de sección Sobre Nosotros ============================ -->
+	<!-- ============================= Inicio de sección Sobre Nosotros ============================== -->
 	<!-- Contenedor Seccion sobre Nosotros -->
 	<section id="sobreNosotros">
-		<h3 class="tituloSeccionBlanco">Sobre nosotros</h3>
+		<h3 class="tituloSeccionBlanco" data-aos="fade-right" data-aos-duration="2000">Sobre nosotros</h3>
 		<div id="contenedorSobreNosotros">
 
 			<div id="cajaTextoSobreNosotros">
@@ -191,14 +201,14 @@
 			</div>
 
 			<div id="imgSobreNosotros">
-				<img src="media/ImagenSobreNosotros.png" alt="">
+				<img src="media/ImagenSobreNosotros.png" alt="" data-aos="fade-left" data-aos-duration="2000">
 			</div>
 
 		</div>
 	</section>
 
 
-	<!-- ============================  Fin de sección Sobre Nosotros  ============================ -->
+	<!-- ==============================  Fin de sección Sobre Nosotros  ============================== -->
 
 
 
@@ -209,10 +219,10 @@
 
 
 
-	<!-- ============================== Inicio de sección Contacto =============================== -->
+	<!-- ================================ Inicio de sección Contacto ================================= -->
 	<!-- Inicio de sección Contacto -->
 	<section id="contacto">
-		<h3 class="tituloSeccionBlanco">Contacto</h3>
+		<h3 class="tituloSeccionBlanco" data-aos="fade-right" data-aos-duration="2000">Contacto</h3>
 		<div id="contenedorContacto">
 			<!-- Link hacia mapa de googleMaps -->
 			<iframe id="mapa"
@@ -240,7 +250,7 @@
 		</div>
 
 	</section>
-	<!-- =============================== Final de sección Contacto =============================== -->
+	<!-- ================================= Final de sección Contacto ================================= -->
 
 
 
@@ -249,7 +259,7 @@
 
 
 
-	<!-- ============================ Inicio de sección Pie de Páagina =========================== -->
+	<!-- ============================== Inicio de sección Pie de Página ============================== -->
 
 	<footer id="piePagina">
 		<div id="redes">
@@ -263,7 +273,19 @@
 			<i class="fa-regular fa-copyright"></i>
 		</div>
 	</footer>
-	<!-- ============================= Final de sección Pie de Páagina =========================== -->
+	<!-- =============================== Final de sección Pie de Página ============================== -->
+
+
+
+
+
+
+	<!-- ===================== Inicialización de las librerias AOS para animaciones ================== -->
+	<script>
+		AOS.init();
+	</script>
+	<!-- ============================================================================================= -->
+
 </body>
 
 </html>
