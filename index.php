@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- ========= Referencia al archio estilos.css que dara formato y estilo a la pagina web ========= -->
-	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css">
 	<!-- ============================================================================================== -->
 
+
+	<!-- ========= Referencia al archio Scripts.js donde se encuentra el codigo de JavaScript ========= -->
+	<script src="js/scripts.js"></script>
+	<!-- ============================================================================================== -->
 
 	<!-- ===================================== Estilos de letra ======================================= -->
 	<!-- ----- Roboto ----- -->
@@ -93,8 +94,37 @@
 					<li class="titulosMenuPpal"><a href="#sobreNosotros"><b>Sobre Nosotros</b></a>
 					<li class="titulosMenuPpal"><a href="#contacto"><b>Contacto</b></a></li>
 				</ul>
-				<a href="php/login.php"><i class="fa-regular fa-circle-user"></i></a>
+				<button id="botonAbrirModal" onclick="modalTipoCliente()"><i class="fa-regular fa-circle-user"></i></button>
+
+
 			</div>
+
+
+			<!-- Inicio de Modal de selección Cliente/Centro -->
+
+			<div id="modal">
+            <div id="contenidoModal">
+               <h3>Eres un centro o cliente</h3>
+
+               <div class="tipoCliente">
+                  <p>Centro</p>
+                  <a class="cerrarModal" href="php/login.php" onclick="cerrarModalTipoCliente()">inicia sesión</a>
+                  <p>o</p>
+                  <a class="cerrarModal" href="php/registroCentro.php" onclick="cerrarModalTipoCliente()">Registrate</a>
+               </div>
+
+               <div class="tipoCliente">
+                  <p>Cliente</p>
+                  <a class="cerrarModal" href="php/login.php" onclick="cerrarModalTipoCliente()">inicia sesión</a>
+                  <p>o</p>
+                  <a class="cerrarModal" href="php/registroCliente.php" onclick="cerrarModalTipoCliente()">Registrate</a>
+               </div>
+
+               <button onclick="cerrarModalTipoCliente()">Cerrar</button>
+            </div>
+			</div>
+			<!-- Fin de Modal de selección Cliente/Centro -->
+
 		</nav>
 
 		<h1 id="nombreSalon" data-aos="zoom-in" data-aos-duration="2000">Beauty Connect</h1>

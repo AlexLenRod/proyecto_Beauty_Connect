@@ -46,11 +46,12 @@
 
     </head>
 	<body>
-      <div id="contenedorlogin">
+      <div id="contenedorFormulario">
          <div id="contenedorLogo"> 
             <img src="../media/logo_BC.png" alt="Imagen logo Beauty Connect" id="logo">
          </div>
          <div id="formulario">
+            <h3>Login</h3>
             <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
                <div class="etiquetasLogin" id="usuario">
@@ -65,7 +66,8 @@
 
                <div id="botonLogin">
                   <input type="submit" value="Continuar" name="hacerLogin"/><br>
-                  <a href="registro.php">Registrarse</a>
+                  <a href="registroCliente.php">Registro Cliente</a>
+                  <a href="registroCentro.php">Registro Centro</a>
                </div>
 
             </form>
