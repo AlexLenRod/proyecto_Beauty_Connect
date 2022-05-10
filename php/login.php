@@ -1,27 +1,5 @@
 
-<?php 
-/* 
-   session_start();
 
-   require "controladores/controladorUsuarios.php"; 
-
-
-
-   if(isset($_POST["hacerLogin"]))
-   {
-      $usuario = obtenerUsuario($_POST["nombre"], $_POST["password"]);
-
-      if($usuario)
-      {
-         hacerLogin($usuario);
-      }
-      else
-      {
-         $error = "El usuario o la contraseña no son válidos";
-      }
-   }
- */
-?>
 
 <!DOCTYPE html>
 
@@ -52,7 +30,8 @@
          </div>
          <div id="formulario">
             <h3>Login</h3>
-            <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<!--             <form role="form" method="post" action="<?php /* echo htmlspecialchars($_SERVER["PHP_SELF"]); */ ?>"> -->
+            <form role="form" method="post" action="controladores/controladorLogin.php">
 
                <div class="etiquetasLogin" id="usuario">
                   <label for="inputUsuario">Correo electrónico : </label><br>
@@ -72,9 +51,8 @@
 
             </form>
 
-            <?php /*
-               if(isset($error))
-               echo $error; */
+            <?php 
+
             ?>
 
          </div>

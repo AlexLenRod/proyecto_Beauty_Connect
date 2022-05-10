@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php 
+require "php/controladores/controladorUsuario.php";
+session_start();
+
+
+?>
 <html>
 
 <head>
@@ -74,10 +79,17 @@
 					<option value="PaisVasco">Pais Vasco</option>
 				</select>
 			</div>
-			<!-- <li class="titulosMenuPpal"><a href="#servicios"><b>Servicios</b></a>
-				
-			</li> -->
 
+<!-- 
+			<div id="usuarioLogueado">
+            <div id="usuario">
+					<?php /* echo $_SESSION['usuario'] */ ?>
+            </div>
+            <div>
+					<a href="php/logout.php">Log out</a>
+            </div>
+			</div>
+ -->
 
 			<!-- Pestañas del menú principal -->
 			<div id="menuEncabezado">
@@ -260,7 +272,7 @@
 				width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-			<!-- Inicio de formulario de reservas -->
+			<!-- Inicio de formulario de Consultas -->
 			<form action="" id="formulario">
 
 				<!-- Cuadros de entrada de datos a formulario -->

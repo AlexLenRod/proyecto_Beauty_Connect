@@ -1,8 +1,46 @@
+<?php 
+   include "controladores/conexion.php";
 
+if ($conectar_Mysql) {
+   echo "Conexion establecida";
 
+   if (isset($_POST['registroCliente'])) {
 
+      if (strlen($_POST['nombre']) >= 1 &&
+         strlen($_POST['correo']) >= 1 &&
+         strlen($_POST['passwordCliente']) >= 1 &&
+         strlen($_POST['dni']) >= 1 &&
+         strlen($_POST['telefono']) >= 1) {
 
+         $nombre = trim($_POST['nombre']);
+         $correo = trim($_POST['correo']);
+         $clave = trim($_POST['passwordCliente']);
+         $dni = trim($_POST['dni']);
+         $telefono = trim($_POST['telefono']);
 
+         $consulta = "INSERT INTO cliente (Nombre, Email, Clave, DNI, Telefono) 
+                           VALUES ('$nombre','$correo','$clave','$dni','$telefono')";
+
+         $resultado = mysqli_query($conectar_Mysql, $consulta);
+
+         if ($resultado) {
+            
+            echo "usuario registrado";
+
+         } else {
+
+            echo "errrrrrrooooooorrrrrrrr";
+
+         }
+      }  else {
+
+            echo "Por favor completa todos los campos";
+
+         }
+
+   }
+}
+?>
 
 
 
@@ -49,7 +87,7 @@
 
                <div class="etiquetasRegistro" id="claveCliente">
                   <label for="inputPassword">Contraseña : </label><br>
-                  <input type="password" id="inputPasswordCliente" name="passwordCliente" placeholder=" Ingrese contraseña">
+                  <input type="text" id="inputPasswordCliente" name="passwordCliente" placeholder=" Ingrese contraseña">
                </div>
 
                <div class="etiquetasRegistro" id="nifCliente">
@@ -64,7 +102,6 @@
 
                <div id="botonRegistro">
                   <input type="submit" value="Registrar" name="registroCliente"/><br>
-<!--                   <a href="registroCliente.php">Registrarse</a> -->
                </div>
 
             </form>
